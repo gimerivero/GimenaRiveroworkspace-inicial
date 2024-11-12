@@ -23,6 +23,7 @@ body {
 #welcome {
   background-image: url(./assets/images/background.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 section {
@@ -92,3 +93,16 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #694F8E;
 }
 
+@media (max-width:768px) {
+  section {
+    height: 100%;
+  }
+
+  #welcome div {
+    flex-direction: column;
+  }
+
+  #welcome .with-text {
+    margin-top: 135px;
+  }
+}
